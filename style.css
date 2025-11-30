@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color:#16161d
+}
+
+.Error {
+    text-align: center;
+    color: white;
+}
+
+.Error img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.Error button {
+    background-color: black;
+    color: white;
+}
+
+
+.navigation nav {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.navigation ul {
+    background-color: black;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation ul li{
+    margin: 20px;
+    text-decoration: none;
+    
+}
+
+.navigation ul .nav-text button{
+    margin-top: -10px;
+
+    margin-right: -10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.navigation ul .nav-button, .navigation ul .nav-errbutton{
+    background-color: black;
+    text-decoration: none;
+}
+
+.navigation ul li button{
+    border: none;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: color 0.6s, transform 0.4s;
+    
+}
+
+.navigation ul li img {
+    margin: -10px;
+    color: white;   
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    transition: color 0.6s, transform 0.4s;
+}
+
+.navigation ul .nav-button button:hover, .navigation ul .nav-errbutton button:hover {
+   cursor: pointer;
+   font-weight: bolder;
+   color: aqua;
+   transform: scale(1.05);
+   text-decoration: underline;
+}
+
+.navigation ul .nav-text button:hover {
+    transform: scale(1.1);
+}
+
+.navigation ul li img:hover {
+    transform: scale(1.1);
+}
+
+.Header {
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.Header h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+
+.Header img {
+    display: inline-block;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    transition: color 0.6s, transform 0.3s;
+}
+
+.Header img:hover {
+    transform: scale(1.1);
+}
+
+.download {
+    display: flex;
+    margin: 40px;
+}
+
+.Platform .download-button {
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.Platform {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin-right: 40px;
+    transition: color 0.6s, transform 0.25s;
+    
+    
+}
+
+.Platform .platform-img {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    
+    
+}
+
+.Platform:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    font-weight: bolder;
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+
+.main {
+    background-color: #16161d;
+    z-index: 3;
+}
+
+
+#main[hidden] {
+    display: none;
+}
+
+.c-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #16161d;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+#cookies[hidden] {
+    display: none;
+}
+
+.c-title {
+    font-weight: bolder;
+    font-size: 40px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c-container img {
+    margin: 20px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.c-desc1 {
+    font-size: 20px;
+    margin: 20px;
+}
+.c-desc2 {
+    font-size: 10px;
+    margin: 30px;
+}
+
+.c-buttons-wrapper {
+    margin: 24px -8px -8px;
+}
+
+#accept-button, #decline-button {
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.6s, transform 0.25s;
+                height: 40px;
+
+                padding-right: 24px;
+                padding-left: 24px;
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+
+                border-radius: 4px;
+
+                margin: 4px;
+
+                
+                margin-bottom: 30px;
+}
+
+
+#accept-button:hover, #decline-button:hover {
+   cursor: pointer;
+   font-weight: bolder;
+   color: rgb(21, 168, 168);
+   transform: scale(1.05);
+   text-decoration: underline;
+}
+
+
+#accept-button {
+    background-color: white;
+
+    color: black;
+}
+
+#decline-button {
+    color: white;
+    
+    background-color: black;
+}
+
+.privacy-policy {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: color 0.6s, transform 0.25s;
+}
+
+.privacy-policy:hover {
+   cursor: pointer;
+   font-weight: bolder;
+   color: rgb(21, 168, 168);
+   transform: scale(1.05);
+}
+
+.scare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+    
+}
+
+#scare[hidden] {
+    display: none;
+}
+
+video#video::-webkit-media-controls-enclosure {
+                display:none !important;
+}
+
+video#video {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
