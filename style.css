@@ -123,14 +123,15 @@ body {
 
 .download {
     display: flex;
-    flex-wrap: wrap
     margin: 40px;
+    flex-wrap: wrap;
 }
 
 .Platform .download-button {
     font-weight: bold;
     padding: 10px;
     padding-bottom: 20px;
+    
     
 }
 
@@ -143,6 +144,8 @@ body {
     margin-right: 40px;
     transition: color 0.6s, transform 0.25s;
     
+    margin-bottom: 20px;
+    
     
 }
 
@@ -150,6 +153,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 50px;
+    
     
     
 }
@@ -301,5 +305,4 @@ video#video {
     width: 100%;
 
     object-fit: cover;
-
 }
