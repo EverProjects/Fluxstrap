@@ -123,6 +123,7 @@ body {
 
 .download {
     display: flex;
+    flex-wrap: wrap
     margin: 40px;
 }
 
@@ -300,4 +301,5 @@ video#video {
     width: 100%;
 
     object-fit: cover;
+
 }
